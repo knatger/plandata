@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;;
+      background:rgb(248, 248, 248);
+    }
+    .container {
+      max-width: 1024px;
+      margin:0 auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* display: none; */
+    }
+
+    .header-title {
+      text-decoration: none;
+      color: inherit;
+      font-family: inherit;
+      font-weight: 600;
+      
+    }
+    .header-btn {
+      outline: 0;
+      background: #4CAF50;
+      width: 80px;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+  }
+  .header-btn:hover,.header-btn:active,.header-btn button:focus {
+    background: #43A047;
+  }
+    .auth {
+      display: none;
+      background:white;
+      padding: 10px;
+      margin: 40px auto;
+      width: 360px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+    
+    .title {
+      margin: 10px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+   
+    .auth-form input {
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .auth-form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .auth-form button:hover,.auth-form button:active,.foauth-form button:focus {
+    background: #43A047;
+  }
+  .content {
+    width: 100%;
+    background:white;
+    padding: 10px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .content table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+  }
+  .content table td {
+    padding: 8px 12px;
+    border: none;
+  }
+
+  .content table thead {
+    font-weight: bold; 
+    border-top: 1px solid #e8e9eb;
+    padding: 8px 12px;
+  }
+  .content table tr th {
+    border: none;
+    border-bottom: 1px solid #e8e9eb;
+    padding: 8px 12px;
+  }
+  .content table tr:hover {
+    background: #e8f6ff;
+  }
+  .edittd {
+    border-left: 1px solid #e8e9eb !important; 
+    width: 80px;
+  }
+  .edittd:hover {
+    background: #b3e1fd;
+  }
+  .btn-contain {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  .button-post {  
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 25%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  </style>
+  <script src="getItems.js" defer></script>
+  <script src="postItems.js" defer></script>
+</head>
+<body>
+  <header class="container header">
+    <div class="name">
+      <a href="" class="header-title">Подразделение 1</a>
+    </div>
+    <button class="header-btn">Выйти</button>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="auth">
+      <h1 class="title">Авторизация</h1>
+      <div class="auth-form">
+        <form action="http://mx.tlink.ru:2606/" method="get" class="authform">
+          <input type="text" name="" id="login" placeholder="Логин" required>
+          <input type="password" name="" id="password" placeholder="Пароль" required>
+          <button type="submit">Войти</button>
+      </form>
+      </div>
+    </div>
+    <div class="content"></div> <!--Область для формируемой таблицы-->
+    <div class="btn-contain">
+      <button class="button-post">Сохранить</button>
+    </div>
+  </main>
+  
+</body>
+</html>

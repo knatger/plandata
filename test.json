@@ -1,0 +1,20 @@
+{
+"listOfItems": [
+{
+"name": "статья1",
+"guid": "e05c3f49-584e-11ec-b175-bcee7bdf46dc"
+},
+{
+"name": "статья2",
+"guid": "e05c3f4a-584e-11ec-b175-bcee7bdf46dc"
+},
+{
+"name": "статья3",
+"guid": "a04f7cff-5912-11ec-b175-bcee7bdf46dc"
+},
+{
+"name": "статья4",
+"guid": "a04f7d00-5912-11ec-b175-bcee7bdf46dc"
+}
+]
+}
